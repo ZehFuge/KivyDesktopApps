@@ -2,7 +2,7 @@
 from kivy.app import App
 from kivy.uix.button import Button
 
-#-Lesson-6-------------------------------------------------------------------------------------------------------------#
+#-Lesson-5-------------------------------------------------------------------------------------------------------------#
 # # Topic: Creating a window with a button and set its position and size
 # # the App needs to be in a class to able to run
 # # the class needs to end with "App" and the argument is "App" too
@@ -31,7 +31,7 @@ from kivy.uix.button import Button
 # if __name__ == "__main__":
 #     LanguageLearnerApp().run()
 
-#-Lesson-7-------------------------------------------------------------------------------------------------------------#
+#-Lesson-6-------------------------------------------------------------------------------------------------------------#
 # # Topic: Create a class for a button and super initialize it
 #
 # class FunkyButton(Button):
@@ -50,15 +50,20 @@ from kivy.uix.button import Button
 # if __name__ == "__main__":
 #     LanguageLearnerApp().run()
 
-#-Lesson-8-------------------------------------------------------------------------------------------------------------#
+#-Lesson-7-------------------------------------------------------------------------------------------------------------#
 # # Topic:
 
+"""
+In this topic, the FunkyButton design was made in the .kv file. Its like using HTML & CSS. 
+The rectangle got x and y coordinates so we can use self.x and self.y for positioning.
+The button does not have 
+
+This needs to be rewritten!!!!
+"""
+
+
 class FunkyButton(Button):
-    def __init__(self, **kwargs):
-        super(FunkyButton, self,).__init__(**kwargs)
-        self.text="Funky button"
-        self.pos=(100, 100)
-        self.size_hint=(.25, .25)
+    pass
 
 class LanguageLearnerApp(App):
     def build(self):
